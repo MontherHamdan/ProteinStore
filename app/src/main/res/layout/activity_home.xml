@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment"
+    android:background="#F6F5F3"
+    >
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="295dp"
+                android:layout_marginTop="-5dp"
+                android:src="@drawable/morning" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-100dp"
+                android:fontFamily="cursive"
+                android:text="Good morning"
+                android:textColor="@color/secondaryLightColor"
+                android:textSize="20pt" />
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                android:text="How can I help you today"
+                android:textColor="@color/secondaryLightColor"
+                android:textSize="8pt" />
+
+            <TextView
+                style="@style/ThemeOverlay.AppCompat.Dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Everything you need in minutes ツ :"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="8pt" />
+
+
+            <!--1 row of card -->
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <!--first nutrition -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/firstnutritionCard"
+                    android:layout_width="170dp"
+                    android:layout_height="175dp"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="175dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:src="@drawable/firstnutriotion" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!--protinek-->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/protinekCard"
+                    android:layout_width="170dp"
+                    android:layout_height="175dp"
+                    android:layout_marginLeft="12dp"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp"
+
+
+                    >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="175dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:src="@drawable/protinek" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+            <!--2 row of card-->
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <!--kabs fit -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/kabsFitCard"
+                    android:layout_width="170dp"
+                    android:layout_height="175dp"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="175dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:src="@drawable/kabsfit" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!--doctor nutrition-->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/doctorNutritionCard"
+                    android:layout_width="170dp"
+                    android:layout_height="175dp"
+                    android:layout_marginLeft="12dp"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp"
+
+
+                    >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="175dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:src="@drawable/doctornutrition" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <!--3 row of card-->
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="100dp"
+                android:orientation="horizontal">
+
+                <!--karrada -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/karradaCard"
+                    android:layout_width="170dp"
+                    android:layout_height="175dp"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="175dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:src="@drawable/karrada" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!--orange supplement-->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/orangeSupllementCard"
+                    android:layout_width="170dp"
+                    android:layout_height="175dp"
+                    android:layout_marginLeft="12dp"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp"
+
+
+                    >
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="175dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:src="@drawable/orange" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

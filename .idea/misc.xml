@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Protein_Store/app/src/main/res/drawable-v24/ic_baseline_email_24.xml" value="0.198" />
+        <entry key="..\:/Protein_Store/app/src/main/res/drawable-v24/ic_baseline_person_24.xml" value="0.198" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_acount_info.xml" value="0.3087719298245614" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_burn_fat_product.xml" value="0.3087719298245614" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_cart_shopping.xml" value="0.3009833262077811" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_categoreis.xml" value="0.3087719298245614" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_categories.xml" value="0.3087719298245614" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_cheack_out.xml" value="0.3009833262077811" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_delete_account.xml" value="0.3087719298245614" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_favourite_fragment.xml" value="0.3087719298245614" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_fragment_view_products.xml" value="0.3087719298245614" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_home.xml" value="0.3087719298245614" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_kcal_fragment.xml" value="0.264" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_main.xml" value="0.3047619047619048" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_privacy_and_policy.xml" value="0.3009833262077811" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_refer_and_earn.xml" value="0.3009833262077811" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_setting_fragment.xml" value="0.3087719298245614" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_ste.xml" value="0.3087719298245614" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/activity_view_product_first_nutrtion.xml" value="0.3087719298245614" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/cart_item.xml" value="0.3009833262077811" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/list_item.xml" value="0.365625" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/refer_and_earn.xml" value="0.3009833262077811" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/sign_in.xml" value="0.36666666666666664" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/sign_up.xml" value="0.36666666666666664" />
+        <entry key="..\:/Protein_Store/app/src/main/res/layout/test.xml" value="0.36666666666666664" />
+        <entry key="..\:/Protein_Store/app/src/main/res/menu/activity_menu_list.xml" value="0.3087719298245614" />
+        <entry key="..\:/Protein_Store/app/src/main/res/menu/menu_list.xml" value="0.8822055137844611" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

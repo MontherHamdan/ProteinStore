@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ProteinStore</string>
+    <string name="my_string_value">dont have account? create new one!</string>
+    <string-array name="gender">
+        <item>your gender</item>
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+    <string-array name="activityLevel">
+        <item>Activity Level</item>
+        <item>Not Active</item>
+        <item>Little Active</item>
+        <item>Moderately active</item>
+        <item>Highly Active</item>
+        <item>Extremely Active</item>
+    </string-array>
+
+</resources>

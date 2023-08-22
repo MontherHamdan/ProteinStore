@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F5F3"
+    android:orientation="vertical"
+    tools:context=".fragments.KcalFragment">
+
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Calorie Calculate"
+        android:textSize="13pt" />
+
+    <TextView
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Enter your body details so we can customize your target."
+        android:textSize="8pt"
+
+        />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardkcal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="@color/secondaryLightColor"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <Spinner
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/gender" />
+
+            <Spinner
+                android:id="@+id/activity_level"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/activityLevel" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_age"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:hint="Your age"
+                app:startIconDrawable="@drawable/cake">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_height"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:hint="Your height (cm)"
+                app:startIconDrawable="@drawable/resize">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_weight"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:hint="Your weight (kg)"
+                app:startIconDrawable="@drawable/weight">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/canclebtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardkcal"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/secondaryLightColor"
+        android:fontFamily="sans-serif-black"
+        android:text="Clear all"
+        android:textAllCaps="false"
+        android:textSize="8pt"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardkcal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="8pt"
+
+        />
+
+
+    <TextView
+        android:id="@+id/warning_message"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateBtn"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="325dp"
+        android:text="Make sure to enter your information correctly"
+        android:textColor="#FF0000"
+        tools:ignore="HardcodedText"
+        android:visibility="gone"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/result_card"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/calculateBtn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="@color/secondaryLightColor"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/result1"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/secondaryLightColor"
+            android:text="Your calorie needs per day is 2000."
+            android:textColor="@color/primaryTextColor"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/result2"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/secondaryLightColor"
+            android:text="You should consume 1500 calories per day to lose weight. "
+            android:textColor="@color/primaryTextColor"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/result3"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/secondaryLightColor"
+            android:text="if you want to get weight you should to to get 3000 We advise you to take  -weight gainer- packager. "
+            android:textColor="@color/primaryTextColor"
+            android:textSize="6pt"
+            tools:ignore="HardcodedText" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

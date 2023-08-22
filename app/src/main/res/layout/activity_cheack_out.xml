@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CheackOutActivity"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="checkout:"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="12pt" />
+    <TextView
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Delivery address:"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="8pt" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="اسم المحافظة/المنطقة/اسم الشارع او الحي/أماكن قريبة "
+        app:counterMaxLength="30"
+        app:endIconMode="clear_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:minHeight="48dp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <!--phone number-->
+    <TextView
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="phone number:"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="8pt" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phonetextinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Phone"
+        app:startIconDrawable="@drawable/ic_baseline_phone_24"
+        app:endIconMode="clear_text"
+        app:prefixText="+962"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:inputType="phone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--delivery instruction-->
+
+
+    <TextView
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Delivery instruction:"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="8pt" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="مثال: قم بايصال الطلب بعد الساعة العاشرة صباحا "
+        app:counterMaxLength="30"
+        app:endIconMode="clear_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:paddingBottom="70dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Add note-->
+
+
+    <TextView
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Add note:"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="8pt" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Note"
+        app:counterMaxLength="30"
+        app:endIconMode="clear_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:paddingBottom="70dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/ch1"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/primaryColor"
+        android:fontFamily="sans-serif-black"
+        android:text="place order                     80.000JOD"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="8pt"
+
+        />
+
+</LinearLayout>

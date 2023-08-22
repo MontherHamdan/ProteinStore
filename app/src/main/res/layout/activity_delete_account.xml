@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".inSetting.DeleteAccount"
+    android:background="#F6F5F3">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="are you sure? If you delete your account, it cannot be reverted!"
+        android:gravity="center"
+        android:layout_marginTop="-250dp"
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="8pt"
+        />
+    <Button
+        android:layout_marginTop="40dp"
+        android:id="@+id/deleteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:textAllCaps="false"
+        android:textSize="8pt"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:backgroundTint="#F85D52"
+        />
+
+</LinearLayout>

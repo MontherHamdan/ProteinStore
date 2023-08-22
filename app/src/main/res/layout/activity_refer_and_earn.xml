@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F5F3"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".inSetting.ReferAndEarn">
+
+    <TextView
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-250dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="give the code to your friend to earn discount"
+        android:textSize="8pt" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/result_card"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@id/calculateBtn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="@color/secondaryLightColor"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:id="@+id/result1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/secondaryLightColor"
+            android:text="#101922"
+            android:textColor="@color/primaryTextColor"
+            tools:ignore="HardcodedText" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

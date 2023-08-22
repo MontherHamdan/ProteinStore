@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SettingFragment"
+    android:background="#F6F5F3">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="left"
+                android:text="Setting:"
+                android:textSize="8pt" />
+
+            <TextView
+                style="@style/ThemeOverlay.AppCompat.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="left"
+                android:text="Account &amp; App Setting "
+                android:textSize="8pt"
+
+                />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="285dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/secondaryLightColor"
+                android:clickable="false"
+                android:elevation="15dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="289dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="1dp">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_gravity="left"
+                            android:src="@drawable/user" />
+
+                        <TextView
+                            android:id="@+id/user_name_nav"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="User Name"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="9pt"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <!--account info-->
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/accountInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="15dp"
+                        android:backgroundTint="@color/secondaryLightColor"
+                        android:clickable="true"
+                        android:elevation="15dp"
+                        android:minHeight="48dp"
+                        app:cardCornerRadius="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/info"
+
+                            />
+
+                        <TextView
+                            style="@style/ThemeOverlay.AppCompat.Dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="50dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Edit your account"
+                            android:textSize="7pt"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="300dp"
+                            android:src="@drawable/arrow"
+
+                            />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <!--REfer & Earn-->
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/reffer_and_earn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:backgroundTint="@color/secondaryLightColor"
+                        android:clickable="true"
+                        android:elevation="15dp"
+                        android:minHeight="48dp"
+                        app:cardCornerRadius="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/network"
+
+                            />
+
+                        <TextView
+                            style="@style/ThemeOverlay.AppCompat.Dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="50dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Refer &amp; Earn"
+                            android:textSize="7pt"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="300dp"
+                            android:src="@drawable/arrow"
+
+                            />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <!--logout-->
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/logoutbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:backgroundTint="@color/secondaryLightColor"
+                        android:clickable="true"
+                        android:elevation="15dp"
+                        android:minHeight="48dp"
+                        app:cardCornerRadius="15dp">
+
+                        <TextView
+                            style="@style/ThemeOverlay.AppCompat.Dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Logout"
+                            android:textColor="#F44336"
+                            android:textSize="7pt"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="300dp"
+                            android:src="@drawable/logout"
+
+                            />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!--Privacy policy-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/secondaryLightColor"
+                android:clickable="true"
+                android:elevation="3dp"
+                android:minHeight="48dp"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/compliant"
+
+                    />
+
+                <TextView
+                    style="@style/ThemeOverlay.AppCompat.Dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Privacy policy"
+                    android:textSize="7pt"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="300dp"
+                    android:src="@drawable/arrow"
+
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!--Contac Us-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/secondaryLightColor"
+                android:clickable="true"
+                android:elevation="3dp"
+                android:minHeight="48dp"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/contact"
+
+                    />
+
+                <TextView
+                    style="@style/ThemeOverlay.AppCompat.Dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Contact Us"
+                    android:textSize="7pt"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="300dp"
+                    android:src="@drawable/arrow"
+
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!--Delete account  -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/deleteCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/secondaryLightColor"
+                android:clickable="true"
+                android:elevation="15dp"
+                android:minHeight="48dp"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/delete"
+
+                    />
+
+                <TextView
+                    style="@style/ThemeOverlay.AppCompat.Dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Delete your account"
+                    android:textColor="#F44336"
+                    android:textSize="7pt"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="300dp"
+                    android:src="@drawable/arrow"
+
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
